@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400;1,600&family=Onest:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-color: #eed09d; 
+    --text-color: #f1f1f1;
+    --second-color: #a18262;
+    --other-color: #747474b7;
+
+    --p-font: 1.2rem;
+}
+
+body {
+    background-image: linear-gradient(rgba(5, 7 , 12, 0.75), rgba(5, 7, 12, 0.75)), url(/img/fondo.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+/*HEADER*/
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+}
+
+.titulo h1 {
+    color: var(--main-color);
+    font-size: 3.5rem;
+}
+
+.navbar {
+    padding-top:50px;
+}
+
+.navbar a {
+    color: var(--second-color);
+    font-weight: 600;
+}
+
+.navlist {
+    display: flex;
+    gap: 5rem;
+}
+
+/* SERVICIOS */
+
+.servicios {
+    height: 100vh;
+    width: 100%;
+    padding-inline: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+
+}
+
+.img-servicio {
+    display: flex;
+    justify-content: center;
+}
+
+.img-servicio img {
+    width: 300px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+.servicios h1{
+    color: var(--main-color);
+    font-size: 2rem;
+    
+}
+
+/*HORARIO*/
+
+.horario {
+    padding: 150px 14% 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 2rem;
+    text-align: center;
+}
+
+.container-box {
+    padding: 43px;
+    background: var(--main-color);
+    border-radius: 3rem;
+}
+
+.bi {
+    color: #222222;
+    font-size: 2rem;
+}
+
+.container-box h3 {
+    font-size: 21px;
+    font-weight: bold;
+    margin: 16px 0;
+}
+
+.container-box p {
+    color: var(--second-color);
+    font-size: var(--p-font);
+    letter-spacing: 1px;
+}
+
+
+/*CONTACTO*/
+
+.contenido-contacto {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.texto-contacto {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.texto-contacto h2 {
+    font-size: 3rem;
+    color: var(--second-color);
+}
+
+.redes i {
+    display: inline-block;
+    font-size: 3rem;
+    margin: 0 60px;
+    color: var(--main-color);
+}
+
+.redes p {
+    color: #a18262;
+}
+
+
+/*FOOTER*/
+
+.footer {
+    margin-block: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contenido-footer i {
+    color: var(--main-color);
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contenido-footer p {
+    color: var(--main-color);
+}
+
+
+/*MEDIAQUERIES*/
+
+@media (max-width:1080px) {
+    .servicios {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto-servicio {
+        padding-block: 1.5rem;
+        text-align: center;
+    }
+
+    .img-servicio {
+        padding-bottom: 1.5rem;
+    }
+}
+
+@media (max-width:1340px) {
+    .horario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10% 10% 70px;
+    }
+
+    .container-box {
+        width: 60%;
+    }
+}
+
+@media (max-width:750px) {
+    .titulo h1{
+        font-size: 3rem;
+    }
+
+    .servicios {
+        padding: 0;
+    }
+
+    .container-box p {
+        width: auto;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .contenido-footer p {
+        text-align: center;
+        padding-block: 1.5rem;
+    }
+}
+
+@media (max-width:645px) {
+    .redes i {
+        margin-inline: 25px;
+    }
+}
+
+@media (max-width:470px) {
+    .servicios {
+        padding-inline: 0;
+    }
+
+    .servicios h1 {
+        font-size: 1.3rem;
+    }
+
+    .titulo h1{
+        font-size: 3rem;
+        padding: 0.5rem;
+    }
+
+    .navlist {
+        gap: 2rem;
+    }
+
+    .horario {
+        padding: 20px 0 20px 0
+    }
+}
