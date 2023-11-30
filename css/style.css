@@ -56,18 +56,33 @@ body {
     gap: 5rem;
 }
 
+.icon-wp {
+    position: fixed;
+    height: 100px;
+    line-height: 55px;
+    bottom: 60px;
+    right: 60px;
+}
+
+.icon-wp i {
+    color: #0af130;
+    font-size: 2rem;
+}
+
+
 /* SERVICIOS */
 
 .servicios {
-    height: 100vh;
     width: 100%;
+    height: 100%;
     padding-inline: 100px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
     align-items: center;
     justify-items: center;
-
 }
+
 
 .img-servicio {
     display: flex;
@@ -79,12 +94,16 @@ body {
     display: flex;
     align-content: center;
     align-items: center;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
+    padding: 0.5rem;
 }
+
 
 .servicios h1{
     color: var(--main-color);
-    font-size: 2rem;
+    font-size: 1.6rem;
+    text-align: center;
+
     
 }
 
@@ -175,11 +194,25 @@ body {
 
 /*MEDIAQUERIES*/
 
-@media (max-width:1080px) {
-    .servicios {
-        height: auto;
+
+@media (max-width:1340px) {
+    .horario {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        padding: 10% 10% 70px;
+    }
+    
+    .container-box {
+        width: 60%;
+    }
+}
+
+@media (max-width:1080px) {
+    .servicios {
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 1fr 1fr;
     }
 
     .texto-servicio {
@@ -190,18 +223,15 @@ body {
     .img-servicio {
         padding-bottom: 1.5rem;
     }
+
+    .img8 {
+        display: none;
+    }
 }
 
-@media (max-width:1340px) {
-    .horario {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10% 10% 70px;
-    }
-
-    .container-box {
-        width: 60%;
+@media (max-width:805px) {
+    .img-servicio img {
+        width: 250px;
     }
 }
 
@@ -211,7 +241,8 @@ body {
     }
 
     .servicios {
-        padding: 0;
+        display: flex;
+        flex-direction: column;
     }
 
     .container-box p {
