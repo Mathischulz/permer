@@ -39,7 +39,7 @@ body {
 
 .titulo h1 {
     color: var(--main-color);
-    font-size: 3.5rem;
+    font-size: 5rem;
 }
 
 .navbar {
@@ -49,7 +49,14 @@ body {
 .navbar a {
     color: var(--second-color);
     font-weight: 600;
+    transition: 0.3s;
+    font-size: 1.5rem;
 }
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
 
 .navlist {
     display: flex;
@@ -57,16 +64,21 @@ body {
 }
 
 .icon-wp {
-   
     position: fixed;
     font-size: 2rem;
     right: 3rem;
     bottom: 3rem;
+    transition: 0.5s ease;
+}
+
+.icon-wp:hover {
+    transform: scale(1.7);
 }
 
 .icon-wp i {
     color: #0af130;
 }
+
 
 
 /* SERVICIOS */
@@ -95,7 +107,13 @@ body {
     align-items: center;
     border-radius: 1rem;
     padding: 0.5rem;
+    transition: 0.5s ease;
 }
+
+.img-servicio img:hover {
+    transform: scale(1.1);
+}
+
 
 
 .servicios h1{
@@ -164,7 +182,13 @@ body {
     font-size: 3rem;
     margin: 0 60px;
     color: var(--main-color);
+    transition: 0.5s;
 }
+
+.redes i:hover {
+    transform: scale(1.4);
+}
+
 
 .redes p {
     color: #a18262;
