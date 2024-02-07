@@ -10,7 +10,6 @@
 
 body {
     background-image: linear-gradient(rgb(79 79 79 / 45%), rgb(24 24 24 / 78%)), url(/images/fondo.png);
-    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
 }
