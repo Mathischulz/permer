@@ -9,8 +9,8 @@
 }
 
 body {
-    background-image: linear-gradient(rgb(79 79 79 / 45%), rgb(24 24 24 / 78%)), url(/images/fondo.png);
-    background-attachment: fixed;
+    background: rgb(204,192,154);
+    background: linear-gradient(41deg, rgba(204,192,154,1) 50%, rgba(238,232,211,1) 50%);
     background-size: 100% 100%;
 }
 
