@@ -15,24 +15,6 @@ body {
 }
 
 
-/*HEADER*/
-
-.icon-wp {
-    position: fixed;
-    font-size: 2rem;
-    right: 3rem;
-    bottom: 3rem;
-    transition: 0.5s ease;
-}
-
-.icon-wp:hover {
-    transform: scale(1.7);
-}
-
-.icon-wp i {
-    color: #0af130;
-}
-
 
 /* SERVICIOS */
 
